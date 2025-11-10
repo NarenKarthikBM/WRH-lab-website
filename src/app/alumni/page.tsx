@@ -396,7 +396,7 @@ export default function Alumni() {
                     {/* Thesis */}
                     <div className="mb-4">
                       <h4 className="font-semibold text-wrh-dark text-sm mb-1">Thesis:</h4>
-                      <p className="text-sm text-wrh-gray italic">"{alumnus.thesis}"</p>
+                      <p className="text-sm text-wrh-gray italic">&quot;{alumnus.thesis}&quot;</p>
                     </div>
 
                     {/* Expertise */}
@@ -433,7 +433,9 @@ export default function Alumni() {
 
                     {/* Testimonial */}
                     <div className="mb-6 p-4 bg-wrh-bg rounded-lg">
-                      <p className="text-sm text-wrh-gray italic">"{alumnus.testimonial}"</p>
+                      <p className="text-sm text-wrh-gray italic">
+                        &quot;{alumnus.testimonial}&quot;
+                      </p>
                     </div>
 
                     {/* Contact */}

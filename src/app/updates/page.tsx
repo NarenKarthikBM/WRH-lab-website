@@ -3,7 +3,6 @@ import {
   Calendar,
   Tag,
   User,
-  Clock,
   ArrowRight,
   Newspaper,
   Award,
@@ -233,7 +232,7 @@ export default function Updates() {
 
   // Separate featured and regular updates
   const featuredUpdates = updates.filter((update) => update.featured)
-  const regularUpdates = updates.filter((update) => !update.featured)
+  // const regularUpdates = updates.filter((update) => !update.featured)
 
   return (
     <div className="min-h-screen bg-wrh-bg">

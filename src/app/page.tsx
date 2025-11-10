@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Hero from '@/components/Hero'
 import ResearchHighlights from '@/components/ResearchHighlights'
-import RecentAwards from '@/components/RecentAwards'
+// import RecentAwards from '@/components/RecentAwards'
 import NewsTicker from '@/components/NewsTicker'
 
 export const metadata: Metadata = {

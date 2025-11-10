@@ -1,6 +1,5 @@
 'use client'
 
-import { Metadata } from 'next'
 import { useState, useMemo } from 'react'
 import { ExternalLink, BookOpen, Users, Calendar, Award, TrendingUp, MapPin } from 'lucide-react'
 import PageHero from '@/components/PageHero'

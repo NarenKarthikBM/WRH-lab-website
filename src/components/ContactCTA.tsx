@@ -52,8 +52,8 @@ export default function ContactCTA() {
 
             <p className="text-blue-100 text-lg mb-8 leading-relaxed">
               Join us in addressing critical water challenges through cutting-edge research,
-              education, and innovation. Whether you're a researcher, student, or industry partner,
-              let's work together to create sustainable water solutions.
+              education, and innovation. Whether you&apos;re a researcher, student, or industry
+              partner, let&apos;s work together to create sustainable water solutions.
             </p>
 
             {/* Contact methods */}

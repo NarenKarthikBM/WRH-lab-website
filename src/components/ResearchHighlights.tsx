@@ -1,4 +1,4 @@
-import { ArrowRight, BookOpen, MapPin, TrendingUp } from 'lucide-react'
+import { ArrowRight, BookOpen, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 /**

@@ -283,7 +283,7 @@ export default function Projects() {
           <h2 className="text-2xl font-bold text-wrh-dark mb-4">Interested in Collaboration?</h2>
           <p className="text-wrh-gray mb-6 max-w-2xl mx-auto">
             We welcome partnerships with researchers, institutions, and organizations working on
-            water-related challenges. Let's work together to advance water science.
+            water-related challenges. Let&apos;s work together to advance water science.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="/contact" className="btn-primary">

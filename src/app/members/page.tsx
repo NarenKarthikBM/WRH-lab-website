@@ -275,7 +275,7 @@ export default function Members() {
         <div className="mt-16 text-center bg-white rounded-2xl p-8">
           <h2 className="text-2xl font-bold text-wrh-dark mb-4">Join Our Research Team</h2>
           <p className="text-wrh-gray mb-6 max-w-2xl mx-auto">
-            We're always looking for passionate researchers to join our team. Explore current
+            We&apos;re always looking for passionate researchers to join our team. Explore current
             opportunities for PhD, MS, and Postdoc positions.
           </p>
           <a href="/opportunities" className="btn-primary">
