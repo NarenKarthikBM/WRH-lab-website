@@ -113,10 +113,16 @@ public/                    # Static assets
 ├── favicon.ico
 └── images/               # Placeholder for lab images
 docs/                     # Project documentation
-├── development.md        # Development guidelines
-├── deployment.md         # Deployment instructions
-├── components.md         # Component documentation
-└── seo-guide.md         # SEO optimization guide
+├── README.md             # Complete documentation index
+├── development/          # Developer resources
+│   ├── development.md    # Setup and coding standards
+│   ├── components.md     # Component library reference
+│   └── nextjs-best-practices.md  # Framework optimization
+├── operations/           # Production and deployment
+│   ├── deployment.md     # Platform deployment guide
+│   └── seo-guide.md     # Search optimization strategies
+└── guides/              # Implementation guides
+    └── favicon-implementation.md  # Favicon setup reference
 ```
 
 ## � Website Sections
