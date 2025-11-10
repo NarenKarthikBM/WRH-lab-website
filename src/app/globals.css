@@ -1,0 +1,295 @@
+@import 'tailwindcss';
+
+@theme {
+  /* WRH Lab custom color palette */
+  --color-wrh-blue: #6b7bfa;
+  --color-wrh-nav: #f4f7fa;
+  --color-wrh-bg: #f7fafc;
+  --color-wrh-green: #19c37d;
+  --color-wrh-dark: #1a202c;
+  --color-wrh-gray: #718096;
+
+  /* Custom spacing */
+  --spacing-18: 4.5rem;
+  --spacing-88: 22rem;
+
+  /* Custom max-width */
+  --max-width-8xl: 88rem;
+}
+
+/* Custom styles for WRH Lab website */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f7fafc;
+  color: #1a202c;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Navigation styles */
+.nav-link {
+  color: #4a5568;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  border-radius: 0.375rem;
+}
+
+.nav-link:hover {
+  color: #19c37d;
+  background-color: rgba(25, 195, 125, 0.1);
+}
+
+.nav-link-active {
+  color: #19c37d;
+  background-color: rgba(25, 195, 125, 0.15);
+  font-weight: 600;
+}
+
+/* Hide scrollbar for horizontal navigation */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scrolling for horizontal navigation */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Better touch scrolling on mobile */
+.overflow-x-scroll {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Navigation scroll behavior */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced scrolling experience */
+.overflow-x-scroll {
+  /* Momentum scrolling for iOS */
+  -webkit-overflow-scrolling: touch;
+  /* Smoother scrolling */
+  scroll-behavior: smooth;
+  /* Better scrollbar behavior */
+  overscroll-behavior-x: contain;
+}
+
+/* Mobile navigation improvements */
+@media (max-width: 1024px) {
+  .nav-link {
+    font-size: 0.875rem;
+    padding: 0.5rem 0.75rem;
+  }
+}
+
+/* Desktop navigation spacing */
+@media (min-width: 1024px) {
+  .nav-link {
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #19c37d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-primary:hover {
+  background-color: #17b379;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #19c37d;
+  border: 2px solid #19c37d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-secondary:hover {
+  background-color: #19c37d;
+  color: white;
+}
+
+/* Card styles */
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styles */
+.section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .section-title {
+    font-size: 3rem;
+  }
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #718096;
+  margin-bottom: 2rem;
+  max-width: 42rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* Form styles */
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #19c37d;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 0.5rem;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #19c37d;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-primary:hover {
+  background-color: #16a673;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #19c37d;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: 2px solid #19c37d;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-secondary:hover {
+  background-color: #19c37d;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Utility classes */
+.text-gradient {
+  background: linear-gradient(to right, #6b7bfa, #19c37d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Line clamp utilities */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Screen reader only utility */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.focus\:not-sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
